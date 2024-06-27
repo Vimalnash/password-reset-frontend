@@ -51,6 +51,7 @@ export function ResetPasswordMailingPage() {
                 setResetLink(
                 `/resetpasswordlink?auth=${data.passwordReset}`
                 )
+                navigate("/");
             }
         })
     };
