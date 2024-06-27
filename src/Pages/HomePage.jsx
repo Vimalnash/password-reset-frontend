@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
 import { MenuBar } from "../Components/MenuBar";
 import { useAppContext } from "../Context/AppContext";
+import { Link } from "react-router-dom";
 
 // Home Page View
 export function HomePage(){
@@ -24,7 +25,7 @@ export function HomePage(){
                     (  
                     <Typography id="resetlink" p={2}>
                         ResetLink
-                        - <a href={resetLink}>ClickHere-ResetPassword</a>
+                        - <Link to={resetLink}>ClickHere-ResetPassword</Link>
                     </Typography>)
                     :
                     ("")

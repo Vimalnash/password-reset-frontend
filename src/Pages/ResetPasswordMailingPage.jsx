@@ -49,7 +49,7 @@ export function ResetPasswordMailingPage() {
                 setFailureMessage("");
                 setSuccessMessage(data.message);
                 setResetLink(
-                `https://gtd28-password-reset-frontend.netlify.app/resetpasswordlink?auth=${data.passwordReset}`
+                `/resetpasswordlink?auth=${data.passwordReset}`
                 )
             }
         })
